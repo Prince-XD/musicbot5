@@ -116,6 +116,82 @@ def private_panel():
                 [
                     InlineKeyboardButton("📚 Commands", callback_data="shikhar"),
                     InlineKeyboardButton("❤️ Donate", url=f"https://t.me/princexdonatebot"),
+                ],              
+                [
+                    InlineKeyboardButton(
+                        "🌐 Source Code", url="https://t.me/PrincexSupport"
+                    )
+                ],
+                [InlineKeyboardButton("📚 Language", callback_data="cbstart")],
+            ] 
+        ]
+        return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
+    if not SUPPORT_CHANNEL and SUPPORT_GROUP:
+        buttons = [
+            [
+                [
+                    InlineKeyboardButton(
+                        "➕ Add me to your Group ➕",
+                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                    )
+                ],            
+                [
+                    InlineKeyboardButton("📚 Commands", callback_data="shikhar"),
+                    InlineKeyboardButton("❤️ Donate", url=f"https://t.me/princexdonatebot"),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "👥 Official Group", url=f"https://t.me/{SUPPORT_GROUP}"
+                    ),                 
+                ],
+                [
+                    InlineKeyboardButton(
+                        "🌐 Source Code", url="https://t.me/PrincexSupport"
+                    )
+                ],
+                [InlineKeyboardButton("📚 Language", callback_data="cbstart")],
+            ] 
+        ]
+        return f"🎛  **This is {MUSIC_BOT_NAME}*", buttons
+    if SUPPORT_CHANNEL and not SUPPORT_GROUP:
+        buttons = [
+            [
+                [
+                    InlineKeyboardButton(
+                        "➕ Add me to your Group ➕",
+                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                    )
+                ],            
+                [
+                    InlineKeyboardButton("📚 Commands", callback_data="shikhar"),
+                    InlineKeyboardButton("❤️ Donate", url=f"https://t.me/princexdonatebot"),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "📣 Official Channel", url=f"https://t.me/{SUPPORT_CHANNEL}"
+                    ),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "🌐 Source Code", url="https://t.me/PrincexSupport"
+                    )
+                ],
+                [InlineKeyboardButton("📚 Language", callback_data="cbstart")],
+            ] 
+        ]
+        return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
+    if SUPPORT_CHANNEL and SUPPORT_GROUP:
+        buttons = [
+            [
+                [
+                    InlineKeyboardButton(
+                        "➕ Add me to your Group ➕",
+                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                    )
+                ],            
+                [
+                    InlineKeyboardButton("📚 Commands", callback_data="shikhar"),
+                    InlineKeyboardButton("❤️ Donate", url=f"https://t.me/princexdonatebot"),
                 ],
                 [
                     InlineKeyboardButton(
@@ -132,69 +208,6 @@ def private_panel():
                 ],
                 [InlineKeyboardButton("📚 Language", callback_data="cbstart")],
             ] 
-        ]
-        return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
-    if not SUPPORT_CHANNEL and SUPPORT_GROUP:
-        buttons = [
-            [
-                InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
-                ),
-            ],
-            [
-                InlineKeyboardButton(
-                    "➕ Add me to your Group",
-                    url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-                )
-            ],
-            [
-                InlineKeyboardButton(
-                    text="📨Support Group", url=f"{SUPPORT_GROUP}"
-                ),
-            ],
-        ]
-        return f"🎛  **This is {MUSIC_BOT_NAME}*", buttons
-    if SUPPORT_CHANNEL and not SUPPORT_GROUP:
-        buttons = [
-            [
-                InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
-                ),
-            ],
-            [
-                InlineKeyboardButton(
-                    "➕ Add me to your Group",
-                    url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-                )
-            ],
-            [
-                InlineKeyboardButton(
-                    text="📨Official Channel", url=f"{SUPPORT_CHANNEL}"
-                ),
-            ],
-        ]
-        return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
-    if SUPPORT_CHANNEL and SUPPORT_GROUP:
-        buttons = [
-            [
-                InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
-                ),
-            ],
-            [
-                InlineKeyboardButton(
-                    "➕ Add me to your Group",
-                    url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
-                )
-            ],
-            [
-                InlineKeyboardButton(
-                    text="📨Official Channel", url=f"{SUPPORT_CHANNEL}"
-                ),
-                InlineKeyboardButton(
-                    text="📨Support Group", url=f"{SUPPORT_GROUP}"
-                ),
-            ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
 
