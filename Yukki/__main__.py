@@ -355,6 +355,7 @@ async def start_command(_, message):
 
 🔖 **To know how to use this bot, please click on the » ❓ Basic Guide button!**""",
         reply_markup=InlineKeyboardMarkup(out[1]),
+        disable_web_page_preview=True,
     )
     if await is_on_off(5):
         sender_id = message.from_user.id
