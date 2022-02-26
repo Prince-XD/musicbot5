@@ -113,7 +113,7 @@ def private_panel():
                     )
                 ],            
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="shikhar"),
+                    InlineKeyboardButton("📚 Commands", url="https://telegra.ph/Prince-Music---Command-List-02-26"),
                     InlineKeyboardButton("❤️ Donate", url=f"https://t.me/princexdonatebot"),
                 ],              
                 [
