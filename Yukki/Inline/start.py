@@ -171,7 +171,7 @@ def private_panel():
                         "🌐 Source Code", url="https://t.me/PrincexSupport"
                     )
                 ],
-                [InlineKeyboardButton("📚 Language", callback_data="cbstart")],           
+                [InlineKeyboardButton("How To Use Me", callback_data="cbhowtouse")],           
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
@@ -183,7 +183,7 @@ def private_panel():
                     )
                 ],            
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="shikhar"),
+                    InlineKeyboardButton("📚 Commands", url="https://telegra.ph/Prince-Music---Command-List-02-26"),
                     InlineKeyboardButton("❤️ Donate", url=f"https://t.me/princexdonatebot"),
                 ],
                 [
@@ -199,7 +199,7 @@ def private_panel():
                         "🌐 Source Code", url="https://t.me/PrincexSupport"
                     )
                 ],
-                [InlineKeyboardButton("📚 Language", callback_data="cbstart")],       
+                [InlineKeyboardButton("❓How to Use Me", callback_data="cbhowtouse")],       
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
 
