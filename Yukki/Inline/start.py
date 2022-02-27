@@ -121,7 +121,7 @@ def private_panel():
                         "🌐 Source Code", url="https://t.me/PrincexSupport"
                     )
                 ],
-                [InlineKeyboardButton("📚 Language", callback_data="cbstart")],           
+                [InlineKeyboardButton("📚 Language", callback_data="cbhowtouse")],           
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
     if not SUPPORT_CHANNEL and SUPPORT_GROUP:
@@ -146,7 +146,7 @@ def private_panel():
                         "🌐 Source Code", url="https://t.me/PrincexSupport"
                     )
                 ],
-                [InlineKeyboardButton("📚 Language", callback_data="cbstart")],           
+                [InlineKeyboardButton("📚 Language", callback_data="cbhowtouse")],           
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}*", buttons
     if SUPPORT_CHANNEL and not SUPPORT_GROUP:
