@@ -188,10 +188,10 @@ def private_panel():
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "👥 Official Group", url=f"https://t.me/PrincexSupport"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{SUPPORT_CHANNEL}"
+                        "📣 Official Channel", url=f"https://t.me/PrincexUpdates"
                     ),
                 ],
                 [
@@ -199,7 +199,7 @@ def private_panel():
                         "🌐 Source Code", url="https://t.me/PrincexSupport"
                     )
                 ],
-                [InlineKeyboardButton("❓How to Use Me", callback_data="cbhowtouse")],       
+                [InlineKeyboardButton("❓How to Use Me", callback_data="shikhar")],       
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
 
