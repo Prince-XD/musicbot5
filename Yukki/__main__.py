@@ -372,14 +372,15 @@ async def help_parser(name, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
-        """Hello {first_name},
+        """❓ **HOW TO USE THIS BOT:**
 
-Click on the buttons for more information.
+1.) **First, Add me to your Group.**
+2.) **Then promote me as admin and give all permissions except Anonymous Admin.**
+3.) **After promoting me, type /reload in group to update the admin list.**
+3.) **Add @PrincexPlugin to your group or type /join to invite her.**
+4.) **Turn on the Video chat first before start to play music.**
 
-All commands can be used with: /
-""".format(
-            first_name=name
-        ),
+📌 **if the userbot not joined to video chat, make sure if the video chat already turned on, or type /leave then type /join again.**""",
         keyboard,
     )
 
